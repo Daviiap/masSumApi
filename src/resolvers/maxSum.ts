@@ -11,7 +11,7 @@ const maxSumLogger = logger.child({ name: "maxSum" });
  * maior. Basicamente essa função verifica se o número é positivo e se ele é precedido por um número
  * negativo ou está no inicio da lista, caso seja, o índice dele é retornado.
  */
-const getPossibleStartIndices = (list: number[]): number[] => {
+export const getPossibleStartIndices = (list: number[]): number[] => {
 	const possibleStartIndices: number[] = [];
 
 	for (let i = 0; i < list.length; i++) {
@@ -35,7 +35,7 @@ const getPossibleStartIndices = (list: number[]): number[] => {
  * o seu valor e um array de um elemento contendo o seu índice.
  *
  */
-const getMaxSumFromNonPositiveList = (
+export const getMaxSumFromNonPositiveList = (
 	list: number[]
 ): MaxSumMutationResponseI => {
 	let sum = list[0];
@@ -63,7 +63,7 @@ const getMaxSumFromNonPositiveList = (
  * descobrir o valor da soma e os índices de início e fim da sublista que a geram a maior soma, é gerado e 
  * retornado um array, contendo os índices de todos os elementos que foram somados, e a soma dos elementos.
  */
-const getMaxSumFromPositiveList = (
+export const getMaxSumFromPositiveList = (
 	list: number[],
 	possibleStartIndices: number[]
 ): MaxSumMutationResponseI => {
