@@ -1,0 +1,9 @@
+version: "3.4"
+services:
+  maxsum:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: maxsum
+    ports:
+      - "8080:4000"
