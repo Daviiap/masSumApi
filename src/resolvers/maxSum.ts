@@ -30,8 +30,8 @@ const getPossibleStartIndices = (list: number[]): number[] => {
 };
 
 /**
- * No caso de uma lista so possua números negativos e/ou zeros, a sublista com maior soma possível será
- * o maior uma sublista contendo o maior termo dentro da lista. Essa função busca o maior termo e retorna
+ * No caso de uma lista so possuir números negativos e/ou zeros, a sublista com maior soma possível será
+ * uma sublista contendo o maior termo dentro da lista. Essa função busca o maior termo e retorna
  * o seu valor e um array de um elemento contendo o seu índice.
  *
  */
@@ -60,8 +60,8 @@ const getMaxSumFromNonPositiveList = (
  * da função `getPossibleStarts` e varrer a lista até o final, guardando sempre o índice de início, o
  * índice do fim da sublista e a soma dos termos. Caso a soma seja maior do que a maior soma até o momento,
  * o índice de inicio e fim e o valor da soma atual são considerados como candidatos da resposta. Após
- * descobrir o valor da soma e os índices de início e fim da sublista que a geram, é gerado e retornado um array, contendo
- * os índices de todos os elementos que foram somados, e a soma dos elementos.
+ * descobrir o valor da soma e os índices de início e fim da sublista que a geram a maior soma, é gerado e 
+ * retornado um array, contendo os índices de todos os elementos que foram somados, e a soma dos elementos.
  */
 const getMaxSumFromPositiveList = (
 	list: number[],
